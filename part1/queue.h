@@ -7,9 +7,10 @@
 void enq(double);
 double deq();
 
-void clear_sum(double *acc); 
-void clear_prod(double *acc);
+void clear_sum(double *); 
+void clear_prod(double *);
 
 double sum(double, double);
 double prod(double, double); 
 double reduce();
+double flex_reduce(void (*)(double *), double (*)(double, double)); 
