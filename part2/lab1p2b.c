@@ -1,12 +1,11 @@
 #include <stdio.h>
 
-int acc = 0;
 
 int accumulate(int x) {
     // Modify this function so that it accumulates values passed to it to
     // a value called "acc".
 
-
+    static int acc = 0;
     acc = acc + x;
     printf("acc is now %d\n", acc);
 
