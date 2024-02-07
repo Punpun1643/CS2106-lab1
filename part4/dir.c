@@ -181,8 +181,7 @@ void rename_file(char *old_filename, char *new_filename, int (*hashfun)(char *, 
     
     if (node == NULL) {
       writelog("File doesn't exist!");
-    } else {
-     
+    } else { 
       add_file(new_filename, node->filesize, node->startblock, hashfun, hashtable, len);
       delete_file(old_filename, hashfun, hashtable, len);
     }

@@ -91,8 +91,9 @@ void delete_llist(TLinkedList **head, TLinkedList *node) {
     }
   }
 
-  // free node and filename
+  // free node
   free(node);
+  node = NULL;
 }
 
 

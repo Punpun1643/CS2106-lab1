@@ -135,5 +135,12 @@ int main() {
         printf("OK! File no longer found!\n");
     else
         printf("ERROR: File still exists!\n");
-
+    
+    // delete remaining files to clean up -- memory deallocation
+    delete_file("work.jpg", hash, hashtable, TABLE_LEN);
+    delete_file("test.txt", hash, hashtable, TABLE_LEN);
+    delete_file("a.exe", hash, hashtable, TABLE_LEN);
+    delete_file("c.exe", hash, hashtable, TABLE_LEN);
+    delete_file("d.tmp", hash, hashtable, TABLE_LEN);
+    delete_file("e.bin", hash, hashtable, TABLE_LEN);
 }
